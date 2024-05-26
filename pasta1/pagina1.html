@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuário</title>
+    <link rel="stylesheet" href="estilo_da_pagina.css">
+    <link rel="stylesheet" href="pagina1.css">
+</head>
+<body>
+
+    <div class="conteudo">
+        <div class="links">
+            <h4 id="links">Paginas</h4>
+            <a id="links" href="../pasta1/pagina1.html">Registro de Usuário</a>
+            <a id="links" href="../pasta2/pagina1.html">Pedido de Pizzá</a>
+            <a id="links" href="../pasta3/pagina1.html">Aváliáçá o de Produto</a>
+            <a id="links" href="../pasta4/pagina1.html">Inscriçá o em Evento</a>
+            <a id="links" href="../pasta5/pagina1.html">Contáto e Uploád de Arquivo</a>
+            <a id="links" href="../menu.html">Menu</a>
+        </div>
+        <div class="sobre_autor">
+            <p id="links">
+                &copy;Emerson Covane
+            </p>
+        </div>
+    </div>
+    <form action="../menu.html">
+        <h2>Registro de Usuário</h2>
+        <div class="primeiro">
+            <label class="descricao" for="nome_completo">Nome completo:</label class="descricao"><br>
+        <input placeholder="Seu nome aqui" class="dados" type="text" id="nome_completo" name="nome_completo" required><br><br>
+
+        <label class="descricao" for="email">Email:</label class="descricao"><br>
+        <input placeholder="Seu email aqui" class="dados" type="email" id="email" name="email" required><br><br>
+
+        <label class="descricao" for="sexo">Sexo:</label class="descricao"><br>
+        <select class="dados" id="sexo" name="sexo" required>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+
+        <label class="descricao" for="data_nascimento">Data de Nascimento:</label class="descricao"><br>
+        <input class="dados" type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+
+        <label  class="descricao" for="pais">País:</label><br>
+        <input placeholder="Pais" class="dados" type="text" id="pais" name="pais" required><br><br>
+        </div>
+
+        <div class="segundo">
+            <input class="chek" type="checkbox" id="termos_condicoes" name="termos_condicoes" required>
+        <label id="termos_texto" for="termos_condicoes">Aceitar os termos e condições</label><br><br>
+        </div>
+
+        <input class="btn" type="submit" value="Registrar">
+    </form>
+</body>
+</html>

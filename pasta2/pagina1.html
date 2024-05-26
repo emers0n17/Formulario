@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Pizza</title>
+    <link rel="stylesheet" href="estilos_da_pagina.css">
+    <link rel="stylesheet" href="pagina1.css">
+</head>
+<body>
+
+    <div class="conteudo">
+        <div class="links">
+            <h4 id="links">Páginas</h4>
+            <a id="links" href="../pasta1/pagina1.html">Registro de Usuário</a>
+            <a id="links" href="../pasta2/pagina1.html">Pedido de Pizza</a>
+            <a id="links" href="../pasta3/pagina1.html">Avaliação de Produto</a>
+            <a id="links" href="../pasta4/pagina1.html">Inscrição em Evento</a>
+            <a id="links" href="../pasta5/pagina1.html">Contato e Upload de Arquivo</a>
+            <a id="links" href="../menu.html">Menu</a>
+        </div>
+        <div class="sobre_autor">
+            <p id="links">
+                &copy; Emerson Covane
+            </p>
+        </div>
+    </div>
+    <form action="../pasta5/confirmacao.html">
+        <h2>Formulário de Pedido de Pizza</h2>
+        <div class="primeiro">
+            <label class="descricao" for="tamanho">Tamanho da Pizza:</label><br>
+            <select class="dados" id="tamanho" name="tamanho" required>
+                <option value="Pequena">Pequena</option>
+                <option value="Média">Média</option>
+                <option value="Grande">Grande</option>
+            </select><br><br>
+
+            <label class="descricao" for="sabor">Sabor:</label><br>
+            <select class="dados" id="sabor" name="sabor" required>
+                <option value="Marguerita">Marguerita</option>
+                <option value="Portuguesa">Portuguesa</option>
+                <option value="Frango">Frango</option>
+            </select><br><br>
+
+            <label class="descricao">Ingredientes adicionais:</label><br>
+            <input class="chek" type="checkbox" id="tomate" name="tomate">
+            <label for="tomate">Tomate</label><br>
+            <input class="chek" type="checkbox" id="azeitona" name="azeitona">
+            <label for="azeitona">Azeitona</label><br>
+            <input class="chek" type="checkbox" id="cebola" name="cebola">
+            <label for="cebola">Cebola</label><br><br>
+
+            <label class="descricao" for="forma_pagamento">Forma de pagamento:</label><br>
+            <select class="dados" id="forma_pagamento" name="forma_pagamento" required>
+                <option value="Débito">Débito</option>
+                <option value="Crédito">Crédito</option>
+                <option value="Dinheiro">Dinheiro</option>
+            </select><br><br>
+        </div>
+
+        <div class="segundo">
+            <input class="chek" type="checkbox" id="termos_condicoes" name="termos_condicoes" required>
+            <label id="termos_texto" for="termos_condicoes">Aceitar os termos e condições</label><br><br>
+        </div>
+
+        <input class="btn" type="submit" value="Enviar Pedido">
+    </form>
+</body>
+</html>

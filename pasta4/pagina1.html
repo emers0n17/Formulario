@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição em Evento</title>
+    <link rel="stylesheet" href="estilos_da_pagina.css">
+    <link rel="stylesheet" href="pagina1.css">
+</head>
+<body>
+
+    <div class="conteudo">
+        <div class="links">
+            <h4 id="links">Páginas</h4>
+            <a id="links" href="../pasta1/pagina1.html">Registro de Usuário</a>
+            <a id="links" href="../pasta2/pagina1.html">Pedido de Pizza</a>
+            <a id="links" href="../pasta3/pagina1.html">Avaliação de Produto</a>
+            <a id="links" href="../pasta4/pagina1.html">Inscrição em Evento</a>
+            <a id="links" href="../pasta5/pagina1.html">Contato e Upload de Arquivo</a>
+            <a id="links" href="../menu.html">Menu</a>
+        </div>
+        <div class="sobre_autor">
+            <p id="links">
+                &copy; Emerson Covane
+            </p>
+        </div>
+    </div>
+    <form action="../pasta5/confirmacao.html">
+        <h2>Formulário de Inscrição em Evento</h2>
+        <div class="primeiro">
+            <label class="descricao" for="nome_completo">Nome completo:</label><br>
+            <input placeholder="Digite seu nome completo" class="dados" type="text" id="nome_completo" name="nome_completo" required><br><br>
+
+            <label class="descricao" for="email">Email:</label><br>
+            <input placeholder="Digite seu email" class="dados" type="email" id="email" name="email" required><br><br>
+
+            <label class="descricao" for="tipo_participacao">Tipo de Participação:</label><br>
+            <select style="padding: 0;" class="dados" id="tipo_participacao" name="tipo_participacao" required>
+                <option value="Palestrante">Palestrante</option>
+                <option value="Participante">Participante</option>
+                <option value="Voluntário">Voluntário</option>
+            </select><br><br>
+
+            <label class="descricao" for="num_acompanhantes">Número de Acompanhantes:</label><br>
+            <input placeholder="Digite o número de acompanhantes" class="dados" type="number" id="num_acompanhantes" name="num_acompanhantes" min="0" required><br><br>
+
+            <label class="descricao">Requisitos alimentares:</label><br>
+            <input class="chek" type="checkbox" id="vegetariano" name="vegetariano">
+            <label for="vegetariano">Vegetariano</label><br>
+            <input class="chek" type="checkbox" id="vegano" name="vegano">
+            <label for="vegano">Vegano</label><br>
+            <input class="chek" type="checkbox" id="sem_restricoes" name="sem_restricoes">
+            <label for="sem_restricoes">Sem restrições</label><br><br>
+        </div>
+
+        <input class="btn" type="submit" value="Enviar Inscrição">
+    </form>
+</body>
+</html>

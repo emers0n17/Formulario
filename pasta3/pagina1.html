@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Produto</title>
+    <link rel="stylesheet" href="estilos_da_pagina.css">
+    <link rel="stylesheet" href="pagina1.css">
+</head>
+<body>
+
+    <div class="conteudo">
+        <div class="links">
+            <h4 id="links">Páginas</h4>
+            <a id="links" href="../pasta1/pagina1.html">Registro de Usuário</a>
+            <a id="links" href="../pasta2/pagina1.html">Pedido de Pizza</a>
+            <a id="links" href="../pasta3/pagina1.html">Avaliação de Produto</a>
+            <a id="links" href="../pasta4/pagina1.html">Inscrição em Evento</a>
+            <a id="links" href="../pasta5/pagina1.html">Contato e Upload de Arquivo</a>
+            <a id="links" href="../menu.html">Menu</a>
+        </div>
+        <div class="sobre_autor">
+            <p id="links">
+                &copy; Emerson Covane
+            </p>
+        </div>
+    </div>
+    <form action="../pasta5/confirmacao.html">
+        <h2>Formulário de Avaliação de Produto</h2>
+        <div class="primeiro">
+            <label class="descricao" for="nome_produto">Nome do Produto:</label><br>
+            <input placeholder="Digite o nome do produto" class="dados" type="text" id="nome_produto" name="nome_produto" required><br><br>
+
+            <label class="descricao" for="avaliacao">Avaliação:</label><br>
+            <select style="padding: 0;" class="dados" id="avaliacao" name="avaliacao" required>
+                <option value="1">1 Estrela</option>
+                <option value="2">2 Estrelas</option>
+                <option value="3">3 Estrelas</option>
+                <option value="4">4 Estrelas</option>
+                <option value="5">5 Estrelas</option>
+            </select><br><br>
+
+            <label class="descricao" for="comentario">Comentário:</label><br>
+            <textarea placeholder="Digite seu comentário aqui" class="dados" id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+        </div>
+
+        <input class="btn" type="submit" value="Enviar Avaliação">
+    </form>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: orangered;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .links {
+            width: 40vh;
+            height: 75vh;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            border-radius: 12px;
+            border-top-right-radius: 30%;
+            border-bottom-right-radius: 30%;
+            overflow: hidden;
+        }
+
+
+        #links {
+            padding: 14.5%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: none;
+            width: 100%;
+            height: 7vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-decoration: none;
+            color: black;
+            font-size: large;
+            transition: 0.1s;
+            margin-bottom: 2vh;
+            font-weight: 550;
+        }
+
+        .div_base {
+            width: 40vh;
+            height: 75vh;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: rgb(170, 0, 255);
+            margin-right: 5vh;
+        }
+
+        #links:hover {
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        .titulo:nth-child(1) {
+            width: 60vh;
+            height: 15vh;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+            margin-left: 5vh;
+        }
+
+        .titulo:nth-child(2) {
+            width: 60vh;
+            height: 50vh;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+            margin-left: 5vh;
+        }
+
+        #titulo_banner {
+            color: black;
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #texto_banner {
+            color: rgba(0, 0, 0, 0.449);
+            font-size: large;
+            font-weight: 700;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="div_base">
+        <div class="links">
+            <a id="links" href="pasta1/pagina1.html">Registro de Usuário</a>
+            <a id="links" href="pasta2/pagina1.html">Pedido de Pizzá</a>
+            <a id="links" href="pasta3/pagina1.html">Aváliáçá o de Produto</a>
+            <a id="links" href="pasta4/pagina1.html">Inscriçá o em Evento</a>
+            <a id="links" href="pasta5/pagina1.html">Contáto e Uploád de Arquivo</a>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="titulo">
+            <p id="titulo_banner">Menu</p>
+        </div>
+        <div style="margin-top: 10vh;" class="titulo">
+            <h1 id="titulo_banner">Actividade 5</h1>
+            <p id="texto_banner">Aprecia alguns tipos de formulario web.</p>
+        </div>
+    </div>
+</body>
+
+</html>
